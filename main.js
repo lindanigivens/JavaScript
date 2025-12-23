@@ -1,11 +1,7 @@
-let x = 6, y = 8, board = String();
-
-for (;board.length < x;) {
-    board += " #"; // # # # #.... 
+let x = 1,
+  y = 2,
+  s = "#",
+  board = string();
+while (board <= x * y) {
+  hi;
 }
-
-this finally works yippie
-
-hello peter
-console.log(board)
-
