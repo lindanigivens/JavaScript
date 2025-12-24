@@ -1,9 +1,17 @@
-let x = 1,
-  y = 2,
-  s = "#",
-  board = string();
+let size = 9;
+let board = "";
 
-while (board <= x * y) {
-  board += 
+for (let y = 0; y < size; y++) {
+  for (let x = 0; x < size; x++) {
+    if ((x + y) % 2 === 0) {
+      board += " ";
+    }
 
+    // else {
+    //   board += "#";
+    // }
+  }
+  // board += "\n";
 }
+
+console.log(board);
