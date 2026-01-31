@@ -3,6 +3,9 @@
 		{
 			"name": "javascript",
 			"path": "."
+		},
+		{
+			"path": "../project"
 		}
 	],
 	"settings": {}
