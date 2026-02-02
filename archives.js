@@ -1,15 +1,17 @@
 // Chapter 2, Looping a triangle
 
-for (
-  let triangle = "#";
-  triangle.length <= 7;
-  console.log((triangle += "#"))
-) {}
+for (let start = ""; start.length < 7; console.log((start += "#"))) {}
+
 // Chapter 2, FizzBuzz
 
-for (counter = 1; counter <= 100; counter++) {
-  if (counter % 5 == 0 && counter % 3 == 0) console.log(`FizzBuzz`);
-  else if (counter % 3 == 0) console.log(`Fizz`);
-  else if (counter % 5 == 0 && !counter % 3 == 0) console.log(`Buzz`);
-  else console.log(counter);
+for (let result = 1; result <= 100; result++) {
+  if (result % 5 == 0 && result % 3 == 0) {
+    console.log(`FizzBuzz`);
+  } else if (result % 5 == 0 && result % 3 != 0) {
+    console.log(`Buzz`);
+  } else if (result % 3 == 0) {
+    console.log(`Fizz`);
+  } else {
+    console.log(result);
+  }
 }
