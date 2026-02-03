@@ -1,21 +1,11 @@
-// let size = 9;
-// let x = "";
-
-// for (; x.length < size; ) {
-//   if (x.length % 2 == 0) {
-//     x = x + "e";
-//   } else {
-//     x = x + "o";
-//   }
-
+// function wrapValue(n) {
+//     let local = n;
+//     return () => local;
 // }
 
-// console.log(x);
-
-
-for () {
-
-    for() {
-
-    }
+function multiplier(factor) {
+  return (number) => number * factor;
 }
+
+let twice = multiplier(3);
+console.log(twice(40));
