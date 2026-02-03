@@ -16,6 +16,8 @@ for (let result = 1; result <= 100; result++) {
   }
 }
 
+hu;
+
 // Chapter 3, Chessboard ~ Attempt
 
 // let size = 8;

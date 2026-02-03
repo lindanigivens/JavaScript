@@ -9,3 +9,5 @@ function multiplier(factor) {
 
 let twice = multiplier(3);
 console.log(twice(40));
+
+// hello world
