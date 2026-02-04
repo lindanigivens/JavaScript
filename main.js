@@ -1,13 +1,11 @@
-// function wrapValue(n) {
-//     let local = n;
-//     return () => local;
-// }
+const min = function (num1, num2) {
+  if (num1 < num2) {
+    return num1;
+  } else if (num1 == num2) {
+    return `They are both the same`;
+  } else {
+    return num2;
+  }
+};
 
-function multiplier(factor) {
-  return (number) => number * factor;
-}
-
-let twice = multiplier(3);
-console.log(twice(40));
-
-// hello world
+console.log(min(10, 11));
