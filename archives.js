@@ -16,26 +16,6 @@ for (let result = 1; result <= 100; result++) {
   }
 }
 
-// Chapter 3, Chessboard ~ Attempt
-
-// let size = 8;
-// let a = " ";
-// let b = "#";
-// let board = "";
-
-// if (size % 2 == 0) {
-//   let even = `${`${a + b}`.repeat(size / 2)}\n`;
-//   let odd = `${`${b + a}`.repeat(size / 2)}\n`;
-//   let oddEven = even + odd;
-//   board = oddEven.repeat(size / 2);
-// } else {
-//   let even = `${`${a + b}`.repeat(Math.floor(size / 2))}${a}\n`;
-//   let odd = `${`${b + a}`.repeat(Math.floor(size / 2))}${b}\n`;
-//   let oddEven = even + odd;
-//   board = `${oddEven.repeat(Math.floor(size / 2))}${even}`;
-// }
-// console.log(board);
-
 // Chapter 2, Chessboard ~ Finally Understand
 
 let size = 8;
@@ -53,7 +33,7 @@ for (let col = 0; col < size; col++) {
 }
 console.log(board);
 
-// Chapter 4, Own learning
+// Chapter 3, Own learning
 
 const hummus = function (factor) {
   const ingredient = function (amount, unit, name) {
@@ -83,3 +63,57 @@ const hummus = function (factor) {
   ingredient(0.5, "teaspoon", "cumin");
 };
 hummus(50);
+
+// Chapter 3, Minimum
+
+const min = function (num1, num2) {
+  return num1 < num2 ? num1 : num2;
+};
+
+console.log(min(0, 10));
+
+// Chapter 3, Recursion
+
+function isEven(n) {
+  if (n === 0) {
+    return true;
+  } else if (n === 1) {
+    return false;
+  } else if (n < 0) {
+    return isEven(n + 2);
+  } else {
+    return isEven(n - 2);
+  }
+}
+
+console.log(isEven(-4));
+
+// Chapter 3, Bean counting
+
+function countBs(str) {
+  let position = 0;
+  let counter = 0;
+  for (; position <= str.length - 1; position++) {
+    if (str[position] === "B") {
+      counter++;
+    }
+  }
+  return counter;
+}
+
+console.log(countBs("I Love Beans! Baby!"));
+
+// Chapter 3, Bean Counting 2.0
+
+function countChar(str, findLetter) {
+  let position = 0;
+  let counter = 0;
+  for (; position <= str.length - 1; position++) {
+    if (str[position] === findLetter) {
+      counter++;
+    }
+  }
+  return counter;
+}
+
+console.log(countChar("My name is Programmer!", "m"));
