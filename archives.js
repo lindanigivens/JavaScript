@@ -117,3 +117,39 @@ function countChar(str, findLetter) {
 }
 
 console.log(countChar("My name is Programmer!", "m"));
+
+// ϕ coefficient
+
+function phi(table) {
+  return (
+    ((table[3] * table[0] - table[2] * table[1]) /
+      Math.sqrt(table[2] + table[3])) *
+    (table[0] + table[1]) *
+    (table[1] + table[3]) *
+    (table[0] + table[2])
+  );
+}
+
+console.log(phi([76, 9, 4, 1]));
+
+// Chpater 4, Functions
+
+function tableFor(event, journal) {
+  let table = [0, 0, 0, 0];
+
+  for (let i = 0; i < journal.length; i++) {
+    let entry = journal[i];
+    let index = 0;
+
+    if (entry.events.includes(event)) index++;
+    if (entry.squirrel) index += 2;
+    table[index] += 1;
+  }
+  return table;
+}
+
+// Less verbose way
+
+for (let entry of JOURNAL) {
+  console.log(`${entry.events.length} events`);
+}
