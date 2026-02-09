@@ -317,3 +317,28 @@ function randomPointOnCircle(radius) {
 }
 
 console.log(randomPointOnCircle(2));
+
+// Playing around with optional property access
+
+function city(object) {
+  return object.population?.men;
+}
+
+console.log(
+  city({
+    address: { city: "Toronto" },
+    population: { men: 21e6, women: 2e7 },
+  }),
+);
+
+console.log(city({ name: "Vera" }));
+
+// The sum of range
+
+function range(start, end) {
+  let range = [];
+  for (let counter = start; counter <= end; ) {
+    range.push(counter++);
+  }
+  return range;
+}
