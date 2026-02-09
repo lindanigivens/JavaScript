@@ -299,3 +299,21 @@ for (let event of journalEvents(JOURNAL)) {
 for (let entry of JOURNAL) {
   console.log(`${entry.events.length} events`);
 }
+
+let words = ["never", "fully"];
+
+console.log(["will", ...words, "understand"]);
+
+let coordinates = { x: 10, y: 190 };
+console.log({ ...coordinates, y: 5, z: 1 });
+
+// They Change an Array and fit it into an existing array without changing things too much.
+
+// Random Point on a circle.
+
+function randomPointOnCircle(radius) {
+  let angle = Math.random() * 2 * Math.PI;
+  return { x: radius * Math.cos(angle), y: radius * Math.sin(angle) };
+}
+
+console.log(randomPointOnCircle(2));

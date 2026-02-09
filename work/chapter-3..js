@@ -37,6 +37,18 @@ const min = function (num1, num2) {
 
 console.log(min(0, 10));
 
+// Chapter 3, Minimum Using Rest Parameters
+
+const minimum = function (...numbers) {
+  let result = +Infinity;
+  for (let number of numbers) {
+    if (number < result) result = number;
+  }
+  return result;
+};
+
+console.log(minimum(4, 1, 9, 100000));
+
 // Chapter 3, Recursion
 
 function isEven(n) {
