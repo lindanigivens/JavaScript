@@ -132,7 +132,7 @@ function phi(table) {
 
 console.log(phi([76, 9, 4, 1]));
 
-// Chpater 4, Functions
+// Chapter 4, Functions
 
 function tableFor(event, journal) {
   let table = [0, 0, 0, 0];
@@ -146,6 +146,30 @@ function tableFor(event, journal) {
     table[index] += 1;
   }
   return table;
+}
+
+function journalEvents(journal) {
+  let events = [];
+  for (let entry of journal) {
+    for (let event of entry.events) {
+      if (!events.includes(event)) {
+        events.push(event);
+      }
+    }
+  }
+  return events;
+}
+console.log(journalEvents(JOURNAL));
+
+for (let event of journalEvents(JOURNAL)) {
+  console.log(event + ":", phi(tableFor(event, JOURNAL)));
+}
+
+for (let event of journalEvents(JOURNAL)) {
+  let correlation = phi(tableFor(event, JOURNAL));
+  if (correlation > 0.1 || correlation < -0.1) {
+    console.log(event + ":", correlation);
+  }
 }
 
 // Less verbose way
