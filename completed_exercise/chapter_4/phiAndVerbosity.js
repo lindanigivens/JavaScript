@@ -1,18 +1,4 @@
-// ϕ coefficient
-
-function phi(table) {
-  return (
-    ((table[3] * table[0] - table[2] * table[1]) /
-      Math.sqrt(table[2] + table[3])) *
-    (table[0] + table[1]) *
-    (table[1] + table[3]) *
-    (table[0] + table[2])
-  );
-}
-
-console.log(phi([76, 9, 4, 1]));
-
-// Chapter 4, Functions
+// phi coefficient
 
 var JOURNAL = [
   { events: ["carrot", "exercise", "weekend"], squirrel: false },
@@ -306,3 +292,17 @@ console.log(["will", ...words, "understand"]);
 
 let coordinates = { x: 10, y: 190 };
 console.log({ ...coordinates, y: 5, z: 1 });
+
+// phi formula
+
+function phi(table) {
+  return (
+    ((table[3] * table[0] - table[2] * table[1]) /
+      Math.sqrt(table[2] + table[3])) *
+    (table[0] + table[1]) *
+    (table[1] + table[3]) *
+    (table[0] + table[2])
+  );
+}
+
+console.log(phi([76, 9, 4, 1]));
