@@ -1,43 +1,41 @@
-// range 1.0
+// range function
 
-const range1 = function (start, end) {
-  let range1 = [];
-  let counter = start;
-  while (counter <= end) {
-    range.push(counter++);
-  }
-  return range1;
-};
-
-// range and sum of range
-
-const range = function (start, end, step = 1) {
-  let range = [],
-    counter = start;
-  if (step > 0) {
-    while (counter <= end) {
-      range.push(counter);
-      counter += step;
-    }
-  } else {
-    while (counter >= end) {
-      range.push(counter);
-      counter += step;
-    }
+const range = function (start, end) {
+  let range = [];
+  for (let counter = start; counter <= end; counter++) {
+    range.push(counter);
   }
   return range;
 };
 
+console.log(range(1, 20));
+
+// sum function
+
 const sum = function (arr) {
-  let sum = 0,
-    i = 0;
-  while (i <= arr.length - 1) {
+  let sum = 0;
+  for (let i = 0; i <= arr.length - 1; i++) {
     sum += arr[i];
-    i++;
   }
   return sum;
 };
 
-console.log(range(1, 10));
-console.log(range(5, 2, -1));
 console.log(sum(range(1, 10)));
+
+// rangeBonus function bonus assignment
+
+const rangeBonus = function (start, end, step = 1) {
+  let rangeBonus = [];
+  if (step > 0) {
+    for (let counter = start; counter <= end; counter += step) {
+      rangeBonus.push(counter);
+    }
+  } else {
+    for (let counter = start; counter >= end; counter -= step) {
+      rangeBonus.push(counter);
+    }
+  }
+  return rangeBonus;
+};
+
+console.log(rangeBonus(1, 10, 5));
