@@ -1,4 +1,4 @@
-// randomPoin
+// random point on circle
 
 function randomPointOnCircle(radius) {
   let angle = Math.random() * 2 * Math.PI;
