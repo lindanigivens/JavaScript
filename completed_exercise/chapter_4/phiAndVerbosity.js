@@ -26,7 +26,7 @@ var JOURNAL = [
   },
   {
     events: [
-      "brussel sprouts",
+      "brussels sprouts",
       "ice cream",
       "brushed teeth",
       "computer",
@@ -47,7 +47,7 @@ var JOURNAL = [
   },
   {
     events: [
-      "brussel sprouts",
+      "brussels sprouts",
       "pudding",
       "brushed teeth",
       "running",
@@ -184,12 +184,12 @@ var JOURNAL = [
     events: ["carrot", "brushed teeth", "exercise", "weekend", "touched tree"],
     squirrel: false,
   },
-  { events: ["brussel sprouts", "running", "work"], squirrel: false },
+  { events: ["brussels sprouts", "running", "work"], squirrel: false },
   { events: ["brushed teeth", "work"], squirrel: false },
   { events: ["lettuce", "brushed teeth", "running", "work"], squirrel: false },
   { events: ["candy", "brushed teeth", "work"], squirrel: false },
   {
-    events: ["brussel sprouts", "brushed teeth", "computer", "work"],
+    events: ["brussels sprouts", "brushed teeth", "computer", "work"],
     squirrel: false,
   },
   { events: ["bread", "brushed teeth", "weekend"], squirrel: false },
