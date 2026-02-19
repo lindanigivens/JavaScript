@@ -17,3 +17,5 @@ const minimum = function (...numbers) {
 };
 
 console.log(minimum([100, 10, 12]));
+
+// Beans for life
