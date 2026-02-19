@@ -14,6 +14,7 @@ const minimum = function (...numbers) {
     if (number < result) result = number;
   }
   return result;
+  console.log("hi");
 };
 
 console.log(minimum([100, 10, 12]));
