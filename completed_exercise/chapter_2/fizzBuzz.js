@@ -11,3 +11,5 @@ for (let result = 1; result <= 100; result++) {
     console.log(result);
   }
 }
+
+console.log("h1");
